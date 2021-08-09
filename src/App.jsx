@@ -17,7 +17,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     width: '600px',
     border: '2px solid black',
-
+    color: '#93db1e',
+    backgroundColor: '#9972d8',
+    
     [theme.breakpoints.down('xs')]: {
       width: '90%'
     },
@@ -36,7 +38,7 @@ export default function App() {
 
   return (
     <div className={classes.wrapper}>
-      <AppBar className={classes.appBar} position='static' color='inherit'>
+      <AppBar className={classes.appBar} position='static'>
         <Typography variant='h2' align='center'>Video Chat</Typography>
       </AppBar>
       <VideoPlayer />
